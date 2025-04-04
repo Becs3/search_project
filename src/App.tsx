@@ -50,7 +50,7 @@ function App() {
     <div className="container">
       <section>
         <h2>Search</h2>
-        <form className="search-form" onSubmit={(e) => handleSearch(e)}>
+        <form onSubmit={(e) => handleSearch(e)}>
           <input 
             type="text" 
             placeholder="search" 
@@ -77,7 +77,7 @@ function App() {
                   )}
                 </section>
 
-                <section>
+                <section className='result-text'>
                   <h3>{item.title}</h3>
                   <p>{item.snippet}</p>
                   <a href={item.link} target="_blank" rel="noopener noreferrer">To Product</a>
